@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --color-bg: #0f0f0f;
+  --color-text: #f5f5f5;
+  --color-primary: #6366f1;
+  --color-secondary: #22d3ee;
+
+  /* Typography */
+  --font-primary: system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+}
