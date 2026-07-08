@@ -1,0 +1,54 @@
+.technologies {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: var(--spacing-xs);
+}
+
+.description {
+  max-width: 600px;
+  margin-top: var(--spacing-sm);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.card {
+  border: 1px solid currentColor;
+  padding: var(--spacing-md);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,58 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.cvButton {
+  border: 1px solid currentColor;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  white-space: nowrap;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-sm);
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+  }
+}

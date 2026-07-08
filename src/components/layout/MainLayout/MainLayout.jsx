@@ -1,19 +1,17 @@
+import Navbar from "../Navbar/Navbar";
+import Footer from "../../../sections/Footer/Footer";
 import styles from "./MainLayout.module.css";
 
-function MainLayout() {
+function MainLayout({ children }) {
   return (
     <div className={styles.layout}>
-      <header className={styles.header}>{/* Navbar */}</header>
+      <header className={styles.header}>
+        <Navbar />
+      </header>
 
-      <main className={styles.main}>
-        {/* Hero */}
-        {/* About */}
-        {/* Technologies */}
-        {/* Projects */}
-        {/* Contact */}
-      </main>
+      <main className={styles.main}>{children}</main>
 
-      <footer className={styles.footer}>{/* Footer */}</footer>
+      <Footer />
     </div>
   );
 }
