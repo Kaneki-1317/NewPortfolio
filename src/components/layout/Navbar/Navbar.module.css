@@ -5,6 +5,7 @@
   justify-content: space-between;
   gap: var(--spacing-md);
   padding: var(--spacing-sm);
+ background-color: var(--color-thenary);
 }
 
 .logo {

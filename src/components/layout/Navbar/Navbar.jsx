@@ -26,10 +26,6 @@ function Navbar() {
       </ul>
 
       <div className={styles.actions}>
-        <a href="#" className={styles.cvButton} download>
-          Descargar CV
-        </a>
-
         <button
           type="button"
           className={styles.toggle}

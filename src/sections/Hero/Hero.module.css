@@ -5,6 +5,10 @@
   justify-content: space-between;
   gap: var(--spacing-lg);
   padding: var(--spacing-lg) var(--spacing-md);
+  background-image: url("../../assets/BackgroundHero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
@@ -12,6 +16,9 @@
   flex-direction: column;
   gap: var(--spacing-sm);
   max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.288);
+  border-radius: 0.5rem;
+  padding: 3rem;
 }
 
 .greeting {
@@ -24,7 +31,7 @@
 }
 
 .role {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
@@ -43,6 +50,7 @@
   padding: var(--spacing-xs) var(--spacing-md);
   border: 1px solid currentColor;
   text-align: center;
+  border-radius: 0.5rem;
 }
 
 .imageWrapper {

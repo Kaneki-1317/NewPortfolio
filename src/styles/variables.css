@@ -2,8 +2,9 @@
   /* Colors */
   --color-bg: #0f0f0f;
   --color-text: #f5f5f5;
-  --color-primary: #6366f1;
-  --color-secondary: #22d3ee;
+  --color-primary: #151F2B;
+  --color-secondary: #273445;
+  --color-thenary: #808da53d;
 
   /* Typography */
   --font-primary: system-ui, sans-serif;

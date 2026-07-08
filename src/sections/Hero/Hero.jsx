@@ -6,11 +6,7 @@ function Hero() {
       <article className={styles.content}>
         <p className={styles.greeting}>Hola, soy</p>
         <h1 className={styles.name}>Cristian Mayorga</h1>
-        <h2 className={styles.role}>Desarrollador Frontend</h2>
-        <p className={styles.description}>
-          Desarrollador especializado en la creación de interfaces web
-          modernas, escalables y con foco en la experiencia de usuario.
-        </p>
+        <h2 className={styles.role}>Desarrollador FullStack</h2>
 
         <div className={styles.actions}>
           <a href="#projects" className={styles.primaryButton}>
@@ -21,10 +17,6 @@ function Hero() {
           </a>
         </div>
       </article>
-
-      <div className={styles.imageWrapper}>
-        <div className={styles.imagePlaceholder} />
-      </div>
     </section>
   );
 }

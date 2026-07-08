@@ -11,18 +11,20 @@ function Projects() {
         como desarrollador para resolver problemas reales.
       </p>
 
-      <div className={styles.grid}>
+      <div className={styles.list}>
         {projects.map(({ id, title, description, image, technologies }) => (
           <article key={id} className={styles.card}>
             <img src={image} alt={title} className={styles.image} />
 
-            <div className={styles.cardContent}>
+            <div className={styles.content}>
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardDescription}>{description}</p>
 
-              <ul className={styles.techList}>
+              <ul className={styles.techList} aria-label={`Tecnologías usadas en ${title}`}>
                 {technologies.map((tech) => (
-                  <li key={tech}>{tech}</li>
+                  <li key={tech} className={styles.techBadge}>
+                    {tech}
+                  </li>
                 ))}
               </ul>
 

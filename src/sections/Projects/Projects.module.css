@@ -1,5 +1,6 @@
 .projects {
   padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-secondary);
 }
 
 .subtitle {
@@ -18,75 +19,91 @@
   margin-top: var(--spacing-sm);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-md);
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
   margin-top: var(--spacing-lg);
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
   border: 1px solid currentColor;
-  overflow: hidden;
+  border-radius: 0.75rem;
 }
 
 .image {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
+  min-height: 120px;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
-.cardContent {
+.content {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-md);
+  gap: 0.25rem;
+  min-width: 0;
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .cardDescription {
-  flex: 1;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .techList {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: 0.35rem;
+  margin-top: 0.25rem;
 }
 
-.techList li {
+.techBadge {
   border: 1px solid currentColor;
-  padding: 0.15rem var(--spacing-xs);
-  font-size: 0.85rem;
+  border-radius: 999px;
+  padding: 0.1rem var(--spacing-xs);
+  font-size: 0.75rem;
 }
 
 .actions {
   display: flex;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-xs);
+  gap: var(--spacing-xs);
+  margin-top: auto;
+  padding-top: var(--spacing-xs);
 }
 
 .primaryButton,
 .secondaryButton {
-  flex: 1;
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 0.3rem var(--spacing-sm);
+  font-size: 0.85rem;
   border: 1px solid currentColor;
+  border-radius: 0.4rem;
 }
 
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .grid {
+@media (max-width: 768px) {
+  .card {
     grid-template-columns: 1fr;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .actions {
+    flex-direction: column;
   }
 }
